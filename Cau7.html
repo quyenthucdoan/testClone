@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table,
+        th,
+        td {
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        
+        th,
+        td {
+            padding: 20px;
+        }
+        
+        #KQ {
+            border: 2px solid #dddddd;
+            margin-left: 5px;
+            text-align: left;
+            width: 70%;
+            padding: 10px;
+        }
+        
+        #myProgress {
+            width: 100%;
+            background-color: #dddddd;
+            border-radius: 5em;
+        }
+        
+        #myBar {
+            background-color: blue;
+            height: 20px;
+            border-radius: 5em;
+            text-align: center;
+        }
+    </style>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body onload="kiNang()">
+    <table>
+        <tr>
+            <th colspan="2">Đăng kí CV</th>
+        </tr>
+        <tr>
+            <th>Họ tên</th>
+            <td>
+                <input type="text" id="ten" placeholder="Nguyen Van C">
+            </td>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <td>
+                <input type="text" id="dc" placeholder="TP HCM">
+            </td>
+        </tr>
+        <tr>
+            <th>Điện thoại</th>
+            <td>
+                <input type="text" id="dt" placeholder="0909000000">
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>
+                <input type="email" id="email" placeholder="ex@mail.com">
+            </td>
+        </tr>
+        <tr>
+            <th>Nghề nghiệp</th>
+            <td>
+                <input type="text" id="nn" placeholder="Designer">
+            </td>
+        </tr>
+
+        <tr>
+            <th>Ảnh đại diện</th>
+            <td>
+                <input type="file" id="myfile" name="myfile" value="Chọn tệp"><br><br>
+            </td>
+        </tr>
+        <tr>
+            <th>Kĩ năng</th>
+            <td>
+                <div id="bangKN"></div>
+                <a href="#" onclick="kiNang()">Thêm</a>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="button" value="dangki" onclick="dangKi()">
+            </th>
+        </tr>
+    </table><br><br>
+
+    <div id="KQ" hidden>
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    var strKN = "";
+
+    function kiNang() {
+        strKN = strKN +
+            '<table>' +
+            '  <tr>' +
+            '      <th>Tên kĩ năng</th>' +
+            '      <td><input type="text" class="kn" placeholder="Node JS"></td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '      <th>Mức độ</th>' +
+            '      <td><input type="range" class="md" min=0 max=100 step=10></td>' +
+            '  </tr>' +
+            '</table><br>';
+        document.getElementById("bangKN").innerHTML = strKN;
+    }
+
+    function dangKi() {
+        $('#KQ').show();
+
+        var index = document.getElementById("KQ");
+        var img = document.getElementById("myfile").path;
+        var ten = document.getElementById("ten").value;
+        var dc = document.getElementById("dc").value;
+        var dt = document.getElementById("dt").value;
+        var nn = document.getElementById("nn").value;
+        var email = document.getElementById("email").value;
+        var icon = 'ha.png';
+
+        console.log(nn + " " + dc + " " + dt + " " + email);
+        // var str = '<img src=' + img + '>';
+
+        var str = '<img src="ha.png">' +
+            '<h2><img src="' + icon + '" >' + ten + '</h2>' +
+            '<p><img src="' + icon + '" >' + nn + '</p>' +
+            '<p><img src="' + icon + '" >' + dc + '</p>' +
+            '<p><img src="' + icon + '" >' + email + '</p>' +
+            '<p><img src="' + icon + '" >' + dt + '</p>' +
+            '<h3>Kĩ năng</h3><hr>';
+
+
+
+
+        // var hinhanh = document.createElement('img');
+        // hinhanh.src = document.getElementById('myfile').value;
+        // index.appendChild(hinhanh);
+
+        // var fr = new FileReader();
+        // fr.onload() = function() {
+        //     document.getElementById("myfile").src = fr.result;
+        // }
+
+        var kn = document.getElementsByClassName("kn");
+        var md = document.getElementsByClassName("md");
+        for (let i = 0; i < kn.length; i++) {
+            str += '<p><img src="' + icon + '" >' + kn[i].value + " " + md[i].value + '</p>';
+            str = str +
+                '<div id="myProgress">' +
+                '  <div id="myBar" style="width:' + md[i].value + '%">' +
+                md[i].value + '%' +
+                '  </div>' +
+                '</div>';
+        }
+
+        index.innerHTML = str;
+    }
+</script>
