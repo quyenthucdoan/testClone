@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-20T17:24:17.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="jVk_JgKn6sxL_DyN5sCz" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-20T17:53:28.589Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="P5ZVOOgc40vPxHefJma9" version="13.10.0" type="github">
   <diagram id="Qpi55SOyXjOFOmFOabGc" name="Page-1">
     <mxGraphModel dx="3119" dy="2265" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -275,6 +275,39 @@
         </mxCell>
         <mxCell id="qd5R296KpSwkzRTT0nPw-149" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=5;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="1110" y="120" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-156" value="Lấy ý kiến khách hàng về sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;strokeWidth=1;gradientColor=#7ea6e0;fillColor=#dae8fc;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-157" value="Release ra sản phẩm" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="82" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-158" value="Tạo Task và phân công cho kĩ thuật viên" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="330" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-159" value="Lấy yêu cầu về chức năng của khách hàng" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;strokeWidth=1;gradientColor=#7ea6e0;fillColor=#dae8fc;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="752.5" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-160" value="Tạo Opportunity" style="whiteSpace=wrap;html=1;rounded=1;gradientColor=#7ea6e0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="920" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-161" value="Liên hệ và hỏi ý kiến khách hàng&lt;br style=&quot;font-size: 14px;&quot;&gt;(Sau thời gian KH dùng thử sản phẩm)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;strokeWidth=1;gradientColor=#7ea6e0;fillColor=#dae8fc;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="370" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-162" value="Xác định Lead và tư vấn giá dịch vụ, &lt;br style=&quot;font-size: 14px;&quot;&gt;demo sản phẩm" style="whiteSpace=wrap;html=1;rounded=1;gradientColor=#7ea6e0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-163" value="&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;Tạo Lead trên hệ thống&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="760" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-164" value="&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;Liên hệ bằng form trực tuyến&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=1;fillColor=#fff2cc;gradientColor=#ffd966;fontSize=14;strokeColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="560" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-165" value="&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;Xem thông tin trên Website City&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qd5R296KpSwkzRTT0nPw-166" value="&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;&lt;font style=&quot;vertical-align: inherit; font-size: 14px;&quot;&gt;Tạo Lead trên hệ thống&lt;/font&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;gradientColor=#7ea6e0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="360" y="210" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
